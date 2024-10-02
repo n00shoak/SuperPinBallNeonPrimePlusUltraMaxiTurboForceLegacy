@@ -13,7 +13,7 @@ public class BallGroundSnap : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!Physics.Raycast(transform.position , Vector3.down,groundDist))
         {
@@ -21,8 +21,9 @@ public class BallGroundSnap : MonoBehaviour
             rb.velocity = rb.velocity + Vector3.down * correction;
         }
 
-        if (rb.velocity.y > 2) 
+        if (rb.velocity.y > 5) 
         {
+            Debug.Log("Denied");
             rb.velocity = rb.velocity + Vector3.down;
         }
 

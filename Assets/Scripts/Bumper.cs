@@ -5,15 +5,22 @@ using UnityEngine.Assertions.Must;
 
 public class Bumper : MonoBehaviour
 {
-    public float bumpPower;
+    public float force = 10f; // Force de propulsion à appliquer
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OUI");
-        Rigidbody rb = collision.rigidbody;
-        if(rb != null)
+        Rigidbody ballRb = collision.gameObject.GetComponent<Rigidbody>();
+
+        if (ballRb != null)
         {
-            rb.velocity = Vector3.Distance(transform.position,collision.transform.position) *Vector3.one * bumpPower;
+            // Calcule la direction du centre du bumper vers la balle
+            Vector3 direction = (collision.transform.position - transform.position).normalized;
+
+            // Annule toute composante sur l'axe Y (on veut uniquement une propulsion horizontale)
+            direction.y = 0;
+
+            // Applique la force dans la direction calculée
+            ballRb.AddForce(direction * force, ForceMode.Impulse);
         }
     }
 }
