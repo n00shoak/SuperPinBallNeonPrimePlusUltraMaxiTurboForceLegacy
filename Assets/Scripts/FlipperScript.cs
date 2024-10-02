@@ -27,16 +27,12 @@ public class FlipperScript : MonoBehaviour
 
         if (Input.GetKey(actionInput))
         {
-            Debug.Log("PUTE");
             spring.targetPosition = deployedAngle;
         }
         else
         {
             spring.targetPosition = restPos;
         }
-
-        Debug.Log("CACA" + spring.targetPosition);
-
         joint.spring = spring;
         joint.useLimits = true;
     }
