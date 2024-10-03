@@ -17,13 +17,11 @@ public class BallGroundSnap : MonoBehaviour
     {
         if (!Physics.Raycast(transform.position , Vector3.down,groundDist))
         {
-            Debug.LogWarning("CACA");
             rb.velocity = rb.velocity + Vector3.down * correction;
         }
 
         if (rb.velocity.y > 5) 
         {
-            Debug.Log("Denied");
             rb.velocity = rb.velocity + Vector3.down;
         }
 
