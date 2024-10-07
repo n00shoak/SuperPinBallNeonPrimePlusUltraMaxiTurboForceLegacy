@@ -8047,12 +8047,16 @@ MonoBehaviour:
   scoreChange:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   bonusChange:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   onReset:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
+  currentscore: 0
   bonus: 1
 --- !u!1 &1644091282
 GameObject:
@@ -9069,7 +9073,7 @@ Transform:
   m_GameObject: {fileID: 1897352108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.32, y: 0.465, z: 0.083}
+  m_LocalPosition: {x: -2.23, y: 0.465, z: 0.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

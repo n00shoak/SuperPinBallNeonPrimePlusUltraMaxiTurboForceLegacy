@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(showScore))]
+[RequireComponent(typeof(OutputShowScore))]
 public class OutputSetBonus : MonoBehaviour
 {
-    private showScore _showScore;
+    private OutputShowScore _showScore;
 
     private void Start()
     {
-        _showScore = GetComponent<showScore>();
+        _showScore = GetComponent<OutputShowScore>();
     }
 }

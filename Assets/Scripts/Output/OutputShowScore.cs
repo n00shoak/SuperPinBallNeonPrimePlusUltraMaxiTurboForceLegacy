@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
 
-public class showScore : MonoBehaviour
+public class OutputShowScore : MonoBehaviour
 {
     [SerializeField] private int targetscore;
     [SerializeField] private TextMeshProUGUI text;
@@ -55,10 +55,5 @@ public class showScore : MonoBehaviour
             currentscore += Mathf.RoundToInt((targetscore - currentscore) / 50) + 1;
             text.text = currentscore.ToString();
         }
-    }
-
-    public void addScore(int value)
-    {
-        targetscore += value;
     }
 }
