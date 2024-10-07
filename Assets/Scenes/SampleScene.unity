@@ -1648,9 +1648,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2267,8 +2267,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
@@ -2422,9 +2422,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2744,8 +2744,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: AddBonus
         m_Mode: 3
         m_Arguments:
@@ -2933,8 +2933,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
@@ -4450,9 +4450,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4726,9 +4726,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5034,9 +5034,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5403,9 +5403,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6151,9 +6151,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6905,9 +6905,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7474,7 +7474,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 162afd9ec7cb006479c0ef2d84f430aa, type: 2}
+  - {fileID: 2100000, guid: c695ce825fe1fd448964b6c2a2be87d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7702,8 +7702,8 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: resetScore
         m_Mode: 1
         m_Arguments:
@@ -7726,8 +7726,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: SetBonus
         m_Mode: 3
         m_Arguments:
@@ -7791,9 +7791,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7906,6 +7906,7 @@ GameObject:
   - component: {fileID: 1615739328}
   - component: {fileID: 1615739330}
   - component: {fileID: 1615739329}
+  - component: {fileID: 1615739332}
   - component: {fileID: 1615739331}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -8039,24 +8040,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 1615739327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e44cab2af53544b8dc61040c030b60, type: 3}
+  m_Script: {fileID: 11500000, guid: c720b7b27dd5f7144b57a506d121e745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1615739329}
+  colorA: {r: 1, g: 0.5294118, b: 0.13725491, a: 1}
+  colorB: {r: 1, g: 0.9875683, b: 0.7783019, a: 1}
+  duration: 0.1
+  repeatCount: 1
+--- !u!114 &1615739332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615739327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa7ed5c2084bd74ebcbc8fddbb4cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetscore: 0
   text: {fileID: 1615739329}
   scoreChange:
     m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
+      m_Calls:
+      - m_Target: {fileID: 1615739331}
+        m_TargetAssemblyTypeName: OutputTextFlash, Assembly-CSharp
+        m_MethodName: StartChangingIntensity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   bonusChange:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   onReset:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
-  currentscore: 0
   bonus: 1
 --- !u!1 &1644091282
 GameObject:
@@ -8229,9 +8255,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8386,9 +8412,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9125,8 +9151,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
         m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
@@ -9380,9 +9406,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9592,9 +9618,9 @@ MonoBehaviour:
   totrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615739331}
-        m_TargetAssemblyTypeName: showScore, Assembly-CSharp
-        m_MethodName: addScore
+      - m_Target: {fileID: 1615739332}
+        m_TargetAssemblyTypeName: OutputShowScore, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
