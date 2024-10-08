@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FlipperScript : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class FlipperScript : MonoBehaviour
     public float hitStrength = 1000f;
     public float flipperDamper = 150f;
 
-    public KeyCode actionInput;
     private HingeJoint joint;
+    private float currentAngle;
 
     void Start()
     {
@@ -19,20 +20,22 @@ public class FlipperScript : MonoBehaviour
 
     }
 
-    void Update()
+    public void Flip(InputAction.CallbackContext context)
     {
         JointSpring spring = new JointSpring();
         spring.spring = hitStrength;
         spring.damper = flipperDamper;
+        if (context.started)
+        {
+            currentAngle = deployedAngle;
+        }
 
-        if (Input.GetKey(actionInput))
+        if(context.canceled == true)
         {
-            spring.targetPosition = deployedAngle;
+            currentAngle = restPos;
         }
-        else
-        {
-            spring.targetPosition = restPos;
-        }
+
+        spring.targetPosition = currentAngle;
         joint.spring = spring;
         joint.useLimits = true;
     }

@@ -20,10 +20,10 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.31132078, g: 0.01766158, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.61
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &98703501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!1001 &196988910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1002,7 +1002,6 @@ MonoBehaviour:
   deployedAngle: -100
   hitStrength: 8000
   flipperDamper: 150
-  actionInput: 324
 --- !u!59 &250657555
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -1239,7 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &315031485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1386,7 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &329284625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1896,6 +1895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 396184266}
+  - component: {fileID: 396184267}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -1921,6 +1921,69 @@ Transform:
   - {fileID: 675829892}
   m_Father: {fileID: 2027493348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &396184267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396184265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 012034ca53e304d439d4e97ad0dd5b20,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 510597712}
+        m_TargetAssemblyTypeName: FlipperScript, Assembly-CSharp
+        m_MethodName: Flip
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b97987c7-cb4c-4633-bbf8-1caef8975a5c
+    m_ActionName: Game/LeftFlipper[/Mouse/leftButton,/Keyboard/space,/Keyboard/leftArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 250657554}
+        m_TargetAssemblyTypeName: FlipperScript, Assembly-CSharp
+        m_MethodName: Flip
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0ae68a7d-9684-4613-945d-a56c926eddfd
+    m_ActionName: Game/RightFlipper[/Mouse/rightButton,/Keyboard/space,/Keyboard/rightArrow]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Game
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &433551019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3594243245622329198, guid: 411cc8ae2588a9a4d976aeca72d08541,
@@ -2476,7 +2539,6 @@ MonoBehaviour:
   deployedAngle: -100
   hitStrength: 8000
   flipperDamper: 150
-  actionInput: 323
 --- !u!59 &510597713
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -3299,7 +3361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &722340376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3634,7 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &819775314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3828,6 +3890,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1615739333}
+        m_TargetAssemblyTypeName: OutputTextFlash, Assembly-CSharp
+        m_MethodName: StartChangingIntensity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &840972716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3995,7 +4069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &846482345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4792,7 +4866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &945235485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6099,7 +6173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &1118056026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6493,7 +6567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &1158690701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6640,7 +6714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &1187346379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6759,7 +6833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6af0d77a58ec40b27b297a5e199aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 3
+  force: 2
 --- !u!65 &1267817599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7803,7 +7877,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.25714302
+        value: 0.13484383
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -7824,8 +7898,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0.9849055, b: 0.5613208, a: 1}
+      key0: {r: 1, g: 0.8270294, b: 0.4575472, a: 1}
+      key1: {r: 1, g: 0.9988208, b: 0.9669811, a: 1}
       key2: {r: 1, g: 0.9849055, b: 0.5613208, a: 0}
       key3: {r: 1, g: 0.9849055, b: 0.5613208, a: 0}
       key4: {r: 1, g: 0.9849055, b: 0.5613208, a: 0}
@@ -8099,8 +8173,9 @@ GameObject:
   - component: {fileID: 1615739329}
   - component: {fileID: 1615739332}
   - component: {fileID: 1615739331}
+  - component: {fileID: 1615739333}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8275,6 +8350,23 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   bonus: 1
+--- !u!114 &1615739333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615739327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c720b7b27dd5f7144b57a506d121e745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1615739329}
+  colorA: {r: 1, g: 0.5294118, b: 0.13725491, a: 1}
+  colorB: {r: 0.4528302, g: 0, b: 0.015888719, a: 1}
+  duration: 0.2
+  repeatCount: 5
 --- !u!1 &1644091282
 GameObject:
   m_ObjectHideFlags: 0
