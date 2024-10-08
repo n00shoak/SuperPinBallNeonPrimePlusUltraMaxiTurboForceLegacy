@@ -24,4 +24,9 @@ public class ProcessPoints : MonoBehaviour
             Points = new bool[Points.Length] ;
         }
     }
+
+    public void resetPoints()
+    {
+        Points = new bool[Points.Length];
+    }
 }

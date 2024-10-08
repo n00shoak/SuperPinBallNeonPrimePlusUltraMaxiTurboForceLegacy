@@ -37,6 +37,7 @@ public class OutputShowScore : MonoBehaviour
 
     public void resetScore()
     {
+        targetscore = 0;
         currentscore = 0;
         text.text = currentscore.ToString();
         onReset.Invoke();

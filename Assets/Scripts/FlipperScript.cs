@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FlipperScript : MonoBehaviour
 {
-
     public float restPos = 0f;
     public float deployedAngle = 50f;
     public float hitStrength = 1000f;
@@ -17,6 +16,7 @@ public class FlipperScript : MonoBehaviour
     {
         joint = GetComponent<HingeJoint>();
         joint.useSpring = true;
+
     }
 
     void Update()

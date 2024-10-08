@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InputPassthrough : MonoBehaviour
+public class InputPassThrough : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<object> totrigger;
+    [SerializeField] private UnityEvent toDo;
 
     private void OnTriggerEnter(Collider other)
     {
-        totrigger.Invoke(other);
+        toDo.Invoke();
     }
 }
