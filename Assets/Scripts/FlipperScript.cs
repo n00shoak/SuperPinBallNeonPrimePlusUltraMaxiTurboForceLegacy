@@ -17,7 +17,6 @@ public class FlipperScript : MonoBehaviour
     {
         joint = GetComponent<HingeJoint>();
         joint.useSpring = true;
-
     }
 
     public void Flip(InputAction.CallbackContext context)
