@@ -1,31 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OutputMoveSliderTo : MonoBehaviour
 {
     [SerializeField] private Image sliderFill;
-    [SerializeField] private float speed,fluidity;
+    [SerializeField] private float speed, fluidity;
 
     public void SlideTo(int Ammount)
     {
+        StopAllCoroutines();
         StartCoroutine(FillBar(Ammount));
     }
 
-    private IEnumerator FillBar(int Ammount = 1)
+    private IEnumerator FillBar(int Ammount)
     {
-        sliderFill.fillAmount +=0.0001f;
-        Debug.Log("CAAAl");
-        yield return new WaitForSeconds(fluidity);
+        while (Mathf.Abs(sliderFill.fillAmount - Ammount) > 0.01f)
+        {
+            sliderFill.fillAmount = Mathf.Lerp(sliderFill.fillAmount, Ammount, speed * Time.deltaTime);
+            yield return new WaitForSeconds(fluidity);
+        }
 
-        if(sliderFill.fillAmount < Ammount + 0.005f || sliderFill.fillAmount > Ammount - 0.005f)
-        {
-            //sliderFill.fillAmount = Ammount;
-        }
-        else
-        {
-            StartCoroutine(FillBar(Ammount));
-        }
+        sliderFill.fillAmount = Ammount;  // Assure que la valeur finale est atteinte
     }
 }
