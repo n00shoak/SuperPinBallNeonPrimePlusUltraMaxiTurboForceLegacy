@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VFX;
 
 public class OutputPlayParticle : MonoBehaviour
 {
-    [SerializeField] private VisualEffect effect;
+    [SerializeField] private ParticleSystem[] effect;
     public void PlayParticleEffect()
     {
-        effect.Play();
+        for(int i = 0; i < effect.Length; i++)
+        {
+            effect[i].Play();
+        }
     }
 }
