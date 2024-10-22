@@ -19,6 +19,7 @@ public class BallGroundSnap : MonoBehaviour
         if (!Physics.Raycast(transform.position , Vector3.down,groundDist, LayerMask))
         {
             transform.position += Vector3.down * correction;
+            rb.velocity = new Vector3(rb.velocity.x, -0.5f, rb.velocity.z);
         }
         Debug.DrawLine(transform.position, transform.position + Vector3.down * groundDist,Color.red);
     }
