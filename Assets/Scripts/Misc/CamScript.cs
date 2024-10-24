@@ -6,7 +6,10 @@ public class CamScript : MonoBehaviour
 {
     public Transform ballPos;
     public float maxPos, minPos;
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
 
